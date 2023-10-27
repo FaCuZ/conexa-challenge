@@ -1,12 +1,17 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller } from '@nestjs/common';
+
 import { PeopleService } from './people.service';
 
-@Controller('people')
-export class PeopleController {
-	constructor(private readonly peopleService: PeopleService) {}
+import { SwapiController } from '@swapi/swapi.controller';
+import { SwapiService } from '@swapi/swapi.service';
 
-	@Get()
-	getPeople(): object {
-		return this.peopleService.getPeople();
+@Controller('people')
+export class PeopleController extends SwapiController {
+	constructor(private readonly peopleService: PeopleService) {
+		super();
+	}
+
+	getService(): SwapiService {
+		return this.peopleService;
 	}
 }

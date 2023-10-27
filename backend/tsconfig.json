@@ -19,7 +19,8 @@
 		"noFallthroughCasesInSwitch": false,
 		"paths": {
 			"@src/*": ["src/*"],
-			"@app/*": ["src/app/*"]
+			"@app/*": ["src/app/*"],
+			"@swapi/*": ["src/swapi/*"]
 		}
 	}
 }

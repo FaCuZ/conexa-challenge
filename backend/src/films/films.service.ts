@@ -4,16 +4,12 @@ import { SwapiRepository } from '@swapi/swapi.repository';
 import { SwapiService } from '@swapi/swapi.service';
 
 @Injectable()
-export class PeopleService extends SwapiService {
+export class FilmsService extends SwapiService {
 	constructor(private readonly swapi: SwapiRepository) {
-		super('people');
+		super('films');
 	}
 
 	getRepository() {
 		return this.swapi;
-	}
-
-	findOne(id: any): any {
-		return super.findOne(id);
 	}
 }

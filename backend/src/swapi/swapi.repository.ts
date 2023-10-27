@@ -5,7 +5,7 @@ import { HttpService } from '@nestjs/axios';
 import { firstValueFrom } from 'rxjs';
 
 @Injectable()
-export class Swapi {
+export class SwapiRepository {
 	constructor(
 		private readonly httpService: HttpService,
 		private readonly configService: ConfigService,
@@ -30,9 +30,5 @@ export class Swapi {
 			logger.warn('No se pudo acceder a ' + url);
 		}
 		return { error: true }; // NOTE
-	}
-
-	async people(): Promise<any> {
-		return this.http('people/');
 	}
 }

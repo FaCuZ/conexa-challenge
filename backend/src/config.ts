@@ -9,11 +9,10 @@ export default () => ({
 		host: process.env.APP_HOST || '0.0.0.0',
 		root_path: process.env.ROOT_PATH || 'api',
 		swagger: parseBool(process.env.SWAGGER) || false,
-		apikey: process.env.APIKEY || '',
 		swapi: process.env.SWAPI_URL || '',
 		cors: {
 			origin: parseArray(process.env.APP_CORS) || '*',
-			methods: 'GET,POST,OPTIONS',
+			methods: 'GET,OPTIONS',
 		},
 	},
 	cache: {
