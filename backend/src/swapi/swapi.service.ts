@@ -6,21 +6,10 @@ export abstract class SwapiService {
 	constructor(private readonly path: string) {}
 
 	async findAll(): Promise<any> {
-		return {
-			clase: 'SwapiService',
-			function: 'findAll',
-			path: this.path,
-			data: await this.getRepository().http(this.path),
-		};
+		return await this.getRepository().http(this.path);
 	}
 
 	async findOne(id: any): Promise<any> {
-		return {
-			clase: 'SwapiService',
-			function: 'findOne',
-			path: this.path,
-			id,
-			data: await this.getRepository().http(this.path + '/' + id),
-		};
+		return await this.getRepository().http(this.path + '/' + id);
 	}
 }

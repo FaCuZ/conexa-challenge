@@ -1,28 +1,32 @@
 # General
 
-[ ] Crear postman
-[ ] Crear el readme
-[ ] Crear el install
+[ ] Crear una colección en Postman.
+[ ] Crear el README.
+[x] Crear el CHALLENGE.
+[ ] Crear el INSTALL.
 
 # Backend
 
 [x] Inicial el proyecto.
-[x] Crear sistema de configuracion.
 [x] Establecer configuraciones de seguridad.
-[ ] Crear ejemplo de .env
-[ ] Establecer trust proxy por variables de entorno.
-[x] Crear un service y un controlador comun para todos.
-[x] Crear el modulo Personajes.
-[x] Crear el modulo Peliculas.
-[x] Crear el modulo Naves.
-[x] Crear el modulo Planetas.
-[ ] Hacer el endpoint de busqueda.
-[ ] Poner un sistema de cache.
-[ ] Poner un sistema de throller.
-[ ] Poner un sistema de health.
-[ ] Mover spec para test.
-[ ] Hacer pruebas unitarias, e2e y coverage.
+[x] Ejemplo del env.
+[x] Establecer trust proxy por variables de entorno.
+[x] Servicio y controlador común para todos.
+[x] Módulo Personajes.
+[x] Módulo Películas.
+[x] Módulo Naves.
+[x] Módulo Planetas.
+[ ] Endpoint findAll.
+[ ] Endpoint findOne.
+[ ] Endpoint de búsqueda.
+[x] Sistema de configuración.
+[ ] Sistema de caché.
+[ ] Sistema de throller.
+[ ] Sistema de health.
+[x] Mover spec para test.
+[x] Hacer pruebas unitarias y coverage.
+[ ] Pruebas e2e.
 
 # Frontend
 
-[ ] Inicial el proyecto
+[ ] Inicial el proyecto.

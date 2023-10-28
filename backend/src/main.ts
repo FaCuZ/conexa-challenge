@@ -17,7 +17,7 @@ async function bootstrap() {
 
 	app.setGlobalPrefix(config.get('app.root_path'));
 
-	app.set('trust proxy', 2);
+	app.set('trust proxy', config.get('app.trust_proxy'));
 
 	await app.listen(config.get('app.port'), config.get('app.host'));
 

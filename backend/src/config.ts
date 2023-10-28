@@ -8,7 +8,7 @@ export default () => ({
 		port: parseInt(process.env.APP_PORT, 10) || 8080,
 		host: process.env.APP_HOST || '0.0.0.0',
 		root_path: process.env.ROOT_PATH || 'api',
-		swagger: parseBool(process.env.SWAGGER) || false,
+		trust_proxy: process.env.TRUST_PROXY ?? 0,
 		swapi: process.env.SWAPI_URL || '',
 		cors: {
 			origin: parseArray(process.env.APP_CORS) || '*',
