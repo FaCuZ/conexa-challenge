@@ -17,7 +17,7 @@ describe('AppController', () => {
 
 	describe('root', () => {
 		it('should return "Conexa - Backend Challenge"', () => {
-			expect(appController.getHome()).toBe('Conexa - Backend Challenge');
+			expect(appController.getRoot()).toBe('Conexa - Backend Challenge');
 		});
 	});
 });

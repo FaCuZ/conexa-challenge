@@ -9,6 +9,7 @@ export default () => ({
 		host: process.env.APP_HOST || '0.0.0.0',
 		root_path: process.env.ROOT_PATH || 'api',
 		trust_proxy: process.env.TRUST_PROXY ?? 0,
+		mem_alert: process.env.MEMORY_ALERT ?? 300,
 		swapi: process.env.SWAPI_URL || '',
 		cors: {
 			origin: parseArray(process.env.APP_CORS) || '*',

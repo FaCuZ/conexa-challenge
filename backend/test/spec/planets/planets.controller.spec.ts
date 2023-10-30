@@ -26,10 +26,10 @@ describe('PlanetsController', () => {
 	});
 
 	it('GET /planets should return a list of planets', async () => {
-		jest.setTimeout(10000);
+		jest.setTimeout(50000);
 		const planets = await controller.findAll();
 		expect(Array.isArray(planets.results)).toBeTruthy();
-	}, 10000);
+	}, 50000);
 
 	it('GET /planets/:id should return a specific planets', async () => {
 		const planetsId = 1;

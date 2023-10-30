@@ -1,9 +1,9 @@
 # General
 
-[ ] Crear una colección en Postman.
-[ ] Crear el README.
-[x] Crear el CHALLENGE.
-[ ] Crear el INSTALL.
+[ ] Colección en Postman.
+[ ] Archivo README.
+[x] Archivo CHALLENGE.
+[ ] Archivo INSTALL.
 
 # Backend
 
@@ -16,13 +16,15 @@
 [x] Módulo Películas.
 [x] Módulo Naves.
 [x] Módulo Planetas.
-[ ] Endpoint findAll.
-[ ] Endpoint findOne.
+[x] Endpoint findAll.
+[x] Endpoint findOne.
 [ ] Endpoint de búsqueda.
+[ ] Devolver 404 cuando falla swapi.
+[ ] Sistema de paginado.
 [x] Sistema de configuración.
-[ ] Sistema de caché.
-[ ] Sistema de throller.
-[ ] Sistema de health.
+[x] Sistema de caché.
+[x] Sistema de throller.
+[x] Sistema de health.
 [x] Mover spec para test.
 [x] Hacer pruebas unitarias y coverage.
 [ ] Pruebas e2e.

@@ -20,15 +20,13 @@ export class SwapiRepository {
 
 		try {
 			const { data } = await firstValueFrom(this.httpService.get(url));
-			//console.log(data);
-
-			//if (!data.encontrado) return { error: true }; // NOTE
+			//if (!data.encontrado) return { error: true }; // TODO
 
 			return data;
 		} catch (error) {
 			const logger = new Logger('SWAPI');
 			logger.warn('No se pudo acceder a ' + url);
 		}
-		return { error: true }; // NOTE
+		return { error: true }; // TODO
 	}
 }
