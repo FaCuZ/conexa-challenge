@@ -1,10 +1,18 @@
-import Navigation from "../components/Navigation";
+import Menuitem from "../components/Menuitem";
+
+import styles from "@styles/info.module.css";
 
 export default function SubLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<div className={"info_wrapper"}>
+		<div className={styles.wrapper}>
 			<menu>
-				<Navigation vertical={true} />
+				<div className={styles.menu_content}>
+					<div className={styles.menu_title}>
+						<h1>Conexa Challenge</h1>
+						<h2>Star Wars API Explorer</h2>
+					</div>
+					<Menuitem />
+				</div>
 			</menu>
 			<main>{children}</main>
 		</div>

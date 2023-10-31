@@ -1,0 +1,32 @@
+.menuitems {
+	/*margin: 40px;*/
+	width: auto;
+}
+
+
+.menuitems li{
+	margin-bottom: 10px;
+}
+
+.container {
+	display: flex;
+	width: 230px;
+	flex-wrap: nowrap;
+	align-items: center;
+	padding: 14px;
+	padding-left: 27px;
+	gap: 25px;
+	background-color: #000000ab;
+	background-image: url("/images/menuitem.svg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.container:hover {
+	background-color: rgb(48, 63, 51);
+}
+
+.icon {
+	filter: invert(1);
+}

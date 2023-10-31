@@ -1,0 +1,84 @@
+.resource {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.resource h1 {
+	padding: 20px;
+	font-size: 25px;
+	text-shadow: 2px 2px 0px black;
+}
+
+.card_section {
+	display: flex;
+	/*height: 80vh;*/
+	width: 85%;
+	background-color: #0000002b;
+	padding: 10px;
+	justify-content: space-around;
+	gap: 15px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	justify-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-content: flex-start;
+	min-width: 200px;
+	border-radius: 8px;
+}
+.icon {
+	filter: invert(1);
+	text-align: center;
+	margin-bottom: 11px;
+}
+
+.icon_prev {
+	filter: invert(1);
+	text-align: center;
+	margin-bottom: 11px;
+	transform: rotate(180deg);
+}
+
+.icon_prev img{
+	transform: rotate(180deg);
+}
+
+.card {
+	width: 150px;
+	height: 125px;
+	background-color: #282833d1;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	font-size: 12px;
+	flex-wrap: nowrap;
+	text-overflow: clip;
+	text-wrap: nowrap;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+
+.card:hover {
+	background-color: #1059418f
+}
+
+.card_section::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+.card_section::-webkit-scrollbar-track {
+	background: transparent;
+	padding: 7px;
+}
+
+.card_section::-webkit-scrollbar-thumb {
+	background-color: #1BD197;
+}
+

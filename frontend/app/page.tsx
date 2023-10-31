@@ -1,6 +1,6 @@
 import Navigation from "./components/Navigation";
 
-import styles from "./styles.module.css";
+import styles from "@styles/home.module.css";
 
 export default function Home() {
 	return (
@@ -10,7 +10,7 @@ export default function Home() {
 					<h1>Conexa Challenge</h1>
 					<h2>Star Wars API Explorer</h2>
 				</div>
-				<Navigation vertical={false} />
+				<Navigation />
 			</div>
 		</main>
 	);

@@ -8,22 +8,13 @@
 	flex-wrap: wrap;
 }
 
-.navigation_column {
-	display: flex;
-	list-style: none;
-	flex-direction: column;
-	justify-content: center;
-	gap: 5px;
-	flex-wrap: nowrap;
-}
-
 .card {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: #000000ab;
-	background-image: url("/card.svg");
+	background-image: url("/images/card.svg");
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -34,14 +25,6 @@
 	/*border: 3px solid green;*/
 	height: 180px;
 	width: 180px;
-	margin: 5px;
-	margin-bottom: 10px;
-}
-
-.navigation_column .card {
-	/*border: 3px solid green;*/
-	height: 150px;
-	width: 150px;
 	margin: 5px;
 	margin-bottom: 10px;
 }

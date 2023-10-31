@@ -1,25 +1,25 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import styles from "@styles/Navigation.module.css";
+import styles from "@styles/Menuitem.module.css";
 
 import links from "../Routes";
 
-export default function Navigation() {
+export default function Menuitem() {
 	return (
-		<nav>
-			<ul className={styles.navigation}>
+		<nav className={styles.menuitems}>
+			<ul>
 				{links.map(({ label, path, icon }) => (
 					<li key={path}>
-						<Link className={styles.card} href={path}>
+						<Link href={path} className={styles.container}>
 							<Image
 								src={`/images/${icon}.svg`}
 								alt={label}
-								width={70}
-								height={70}
+								width={35}
+								height={35}
 								className={styles.icon}
 							/>
-							{label}
+							<div className={styles.text}>{label}</div>
 						</Link>
 					</li>
 				))}
