@@ -1,10 +1,9 @@
 "use client";
 
-import Image from "next/image";
-
 import styles from "@styles/Background.module.css";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 
 export default function Navigation() {
 	const bg = useRef<any>(null);
@@ -38,6 +37,7 @@ export default function Navigation() {
 					alt="Borde"
 					width={250}
 					height={250}
+					priority={false}
 				/>
 			</div>
 			<div className={styles.bgborder_rotate}>
@@ -46,6 +46,7 @@ export default function Navigation() {
 					alt="Borde"
 					width={250}
 					height={250}
+					priority={false}
 				/>
 			</div>
 		</>

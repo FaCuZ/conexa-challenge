@@ -11,23 +11,21 @@
 	text-shadow: 2px 2px 0px black;
 }
 
-.card_section {
-	display: flex;
-	/*height: 80vh;*/
-	width: 85%;
+.card_wrapper {
 	background-color: #0000002b;
-	padding: 10px;
-	justify-content: space-around;
-	gap: 15px;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	justify-items: center;
-	flex-wrap: wrap;
-	flex-direction: row;
-	align-content: flex-start;
+	padding: 15px;
 	min-width: 200px;
 	border-radius: 8px;
 }
+
+.card_section {
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
 .icon {
 	filter: invert(1);
 	text-align: center;
@@ -66,19 +64,5 @@
 
 .card:hover {
 	background-color: #1059418f
-}
-
-.card_section::-webkit-scrollbar {
-	width: 5px;
-	height: 5px;
-}
-
-.card_section::-webkit-scrollbar-track {
-	background: transparent;
-	padding: 7px;
-}
-
-.card_section::-webkit-scrollbar-thumb {
-	background-color: #1BD197;
 }
 

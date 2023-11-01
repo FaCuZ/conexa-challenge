@@ -20,7 +20,7 @@
 [x] Endpoint findOne.
 [ ] Endpoint de búsqueda.
 [ ] Devolver 404 cuando falla swapi.
-[ ] Sistema de paginado.
+[x] Sistema de paginado.
 [x] Sistema de configuración.
 [x] Sistema de caché.
 [x] Sistema de throller.
@@ -31,4 +31,11 @@
 
 # Frontend
 
-[ ] Inicial el proyecto.
+[x] Estructura del proyecto.
+[X] Diseño de la pagina.
+[x] Pantalla home.
+[x] Pantalla listado.
+[x] Pantalla de error.
+[x] Pantalla de detalle.
+[x] Pantalla de carga.
+[x] Paginado

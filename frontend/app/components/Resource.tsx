@@ -1,76 +1,65 @@
-import styles from "@styles/Resource.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-interface Element {
-	url: string;
-	name: string;
-	title: string;
-	gender: string;
-}
+import styles from "@styles/Resource.module.css";
+import { Element, Resource } from "@utils/interfaces";
+import fetchData from "@utils/fetch";
+import Paginator from "./Paginator";
 
-interface Resource {
-	type: string;
-	icon: string;
-}
+export default async function Resource(params: Resource) {
+	const details_path = "/categorias/" + params.category + "/";
 
-const fetchResource = (type: string) => {
+	const base_path = process.env.BACKEND_URL + params.category;
+	const endpoint = base_path + "?page=" + params.page;
+
+	const resource = await fetchData(endpoint);
+
+	/*
 	try {
-		return fetch("http://127.0.0.1:8080/api/" + type).then((res) => res.json());
+		const base_path = process.env.BACKEND_URL + params.category;
+		const endpoint = base_path + "?page=" + params.page;
+		resource = await fetch(endpoint).then((res) => res.json());
 	} catch (error) {
 		console.log(error);
 	}
-};
+*/
 
-export default async function Resource({ type, icon }: Resource) {
-	const resource = await fetchResource(type);
-
-	const elements = resource.results;
+	const results = resource.results.map(function (result: any) {
+		var id = result.url.match(/\/(\d+)\/?$/)[1];
+		return { ...result, id: id };
+	});
 
 	return (
-		<ul className={styles.card_section}>
-			{elements.map(({ title, name, url }: Element) => (
-				<li key={url}>
-					<Link className={styles.card} href={"/"}>
-						<Image
-							src={`/images/${icon}.svg`}
-							alt={name ? name : title}
-							width={70}
-							height={70}
-							className={styles.icon}
-						/>
-						{name ? name : title}
-					</Link>
-				</li>
-			))}
-			{resource.previous !== null ? (
-				<li>
-					<Link className={styles.card} href={"/"}>
-						<Image
-							src={`/images/next.svg`}
-							alt={"Siguiente"}
-							width={30}
-							height={70}
-							className={styles.icon_prev}
-						/>
-						Anterior
-					</Link>
-				</li>
-			) : null}
-			{resource.next !== null ? (
-				<li>
-					<Link className={styles.card} href={"/"}>
-						<Image
-							src={`/images/next.svg`}
-							alt={"Siguiente"}
-							width={30}
-							height={70}
-							className={styles.icon}
-						/>
-						Siguiente
-					</Link>
-				</li>
-			) : null}
-		</ul>
+		<>
+			<div className={styles.card_wrapper}>
+				<ul className={styles.card_section}>
+					{results.map(({ title, name, url, id }: Element) => {
+						return (
+							<li key={url}>
+								<Link
+									className={styles.card}
+									href={details_path + id}
+								>
+									<Image
+										src={`/images/${params.icon}.svg`}
+										alt={name ? name : title}
+										width={70}
+										height={70}
+										className={styles.icon}
+									/>
+									{name ? name : title}
+								</Link>
+							</li>
+						);
+					})}
+				</ul>
+			</div>
+			<Paginator
+				prev={resource.previous}
+				next={resource.next}
+				category={params.category}
+				page={params.page}
+			/>
+		</>
 	);
 }

@@ -5,7 +5,7 @@ import { PlanetsService } from './planets.service';
 import { SwapiController } from '@swapi/swapi.controller';
 import { SwapiService } from '@swapi/swapi.service';
 
-@Controller('planets')
+@Controller('planetas')
 export class PlanetsController extends SwapiController {
 	constructor(private readonly planetsService: PlanetsService) {
 		super();

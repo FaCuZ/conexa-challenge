@@ -28,3 +28,13 @@
 	bottom: 0px;
 	transform: rotate(180deg);
 }
+
+@media screen and (max-width: 883px) {
+	.bgborder {
+		display: none;
+	}
+
+	.bgborder_rotate {
+		display: none;
+	}
+}

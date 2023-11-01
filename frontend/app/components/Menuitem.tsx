@@ -1,9 +1,8 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 import styles from "@styles/Menuitem.module.css";
-
-import links from "../Routes";
+import links from "@utils/routes";
 
 export default function Menuitem() {
 	return (

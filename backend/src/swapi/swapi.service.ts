@@ -5,11 +5,12 @@ export abstract class SwapiService {
 
 	constructor(private readonly path: string) {}
 
-	async findAll(): Promise<any> {
-		return await this.getRepository().http(this.path);
+	async findAll(page: number): Promise<any> {
+		const pathquery = this.path + '?page=' + (page || 1);
+		return await this.getRepository().http(pathquery);
 	}
 
-	async findOne(id: any): Promise<any> {
+	async findOne(id: number): Promise<any> {
 		return await this.getRepository().http(this.path + '/' + id);
 	}
 }

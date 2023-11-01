@@ -1,0 +1,15 @@
+.card_wrapper {
+	background-color: #000000b8;
+	padding: 30px;
+	min-width: 200px;
+	border-radius: 8px;
+	max-width: 100%;
+}
+
+.text_prop {
+	text-transform: capitalize;
+}
+
+.text_value {
+	color: #1bd197;
+}

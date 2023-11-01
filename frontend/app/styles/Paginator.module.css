@@ -1,0 +1,34 @@
+.paginator {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: center;
+	gap: 25px;
+	margin: 20px;
+	border-radius: 3px;
+}
+.paginator span{
+	background-color: #0000002b;
+	padding: 5px;
+	border-radius: 3px;
+}
+
+.icon_prev, .icon_next {
+	padding: 3px;
+	border-radius: 3px;
+}
+
+.icon_prev {
+	transform: rotate(180deg);
+}
+
+.icon_next:hover, .icon_prev:hover {
+	background-color: #1059418f
+}
+
+
+.icon_disable {
+	filter: grayscale(100%);
+	pointer-events: none;
+	opacity: 0.5;
+}

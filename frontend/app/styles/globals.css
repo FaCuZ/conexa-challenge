@@ -25,3 +25,17 @@ body {
 	min-height: 100vh;
 	padding: 50px;
 }
+
+body::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #050f24;
+	padding: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #1BD197;
+}

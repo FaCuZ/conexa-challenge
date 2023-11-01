@@ -1,6 +1,6 @@
 import Menuitem from "../components/Menuitem";
 
-import styles from "@styles/info.module.css";
+import styles from "@styles/categorias.module.css";
 
 export default function SubLayout({ children }: { children: React.ReactNode }) {
 	return (

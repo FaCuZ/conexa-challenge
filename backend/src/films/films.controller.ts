@@ -4,7 +4,7 @@ import { FilmsService } from './films.service';
 import { SwapiController } from '@swapi/swapi.controller';
 import { SwapiService } from '@swapi/swapi.service';
 
-@Controller('films')
+@Controller('peliculas')
 export class FilmsController extends SwapiController {
 	constructor(private readonly filmsService: FilmsService) {
 		super();

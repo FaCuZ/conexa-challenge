@@ -1,12 +1,12 @@
-import { Get, Param } from '@nestjs/common';
+import { Get, Param, Query } from '@nestjs/common';
 import { SwapiService } from './swapi.service';
 
 export abstract class SwapiController {
 	abstract getService(): SwapiService;
 
 	@Get('')
-	async findAll() {
-		return await this.getService().findAll();
+	async findAll(@Query('page') page: number) {
+		return await this.getService().findAll(page);
 	}
 
 	@Get(':id')

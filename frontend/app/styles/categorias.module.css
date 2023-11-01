@@ -12,13 +12,13 @@
 
 .wrapper main {
 	flex: 8;
-	margin-top: 25px;
+	padding: 25px;
+	min-width: 500px;
 }
 
 .menu_content {
 	padding: 25px;
 }
-
 
 .menu_title{
 	padding-bottom: 40px;
