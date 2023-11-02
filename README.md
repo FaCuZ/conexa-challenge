@@ -5,6 +5,7 @@ Este proyecto es una aplicación web desarrollada como parte del desafío de Ful
 ## Características
 
 **Backend:**
+
 El servidor se ha construido utilizando Node.js y Nest.js, permitiendo la interacción con la API pública de Star Wars para obtener información sobre personajes, películas, naves y planetas. El sistema ofrece características como paginación, seguridad, configuración, almacenamiento en caché y control de cantidad de solicitudes para optimizar el rendimiento. Para asegurar la robustez de la aplicación, se ha incorporado un sistema de salud (health) que verifica su estado. Por último, se han realizado pruebas unitarias y se ha medido la cobertura del código, lo que contribuye a garantizar la calidad del proyecto.
 
 **Frontend:**
@@ -30,12 +31,12 @@ La interfaz de usuario ha sido diseñada pensando en la usabilidad y la estétic
 3. Ejecuta el Backend:
 
     - En la carpeta `backend`, crea un archivo `.env` y configura las variables de entorno necesarias. Puedes utilizar el archivo `.env.example` como ejemplo.
-    - Ejecuta el servidor utilizando `npm run start`.
+    - Ejecuta el servidor utilizando `npm run build` y despues `npm run start`.
 
 4. Ejecuta el Frontend:
 
     - En la carpeta `frontend`, configura las variables de entorno necesarias en un archivo `.env`. Puedes utilizar el archivo `.env.example` como ejemplo.
-    - Inicia la aplicación con `npm run dev`.
+    - Inicia la aplicación con `npm run start`.
 
 5. Accede a la aplicación
 
