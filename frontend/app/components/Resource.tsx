@@ -14,16 +14,6 @@ export default async function Resource(params: Resource) {
 
 	const resource = await fetchData(endpoint);
 
-	/*
-	try {
-		const base_path = process.env.BACKEND_URL + params.category;
-		const endpoint = base_path + "?page=" + params.page;
-		resource = await fetch(endpoint).then((res) => res.json());
-	} catch (error) {
-		console.log(error);
-	}
-*/
-
 	const results = resource.results.map(function (result: any) {
 		var id = result.url.match(/\/(\d+)\/?$/)[1];
 		return { ...result, id: id };
