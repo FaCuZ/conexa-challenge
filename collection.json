@@ -7,245 +7,527 @@
 	},
 	"item": [
 		{
-			"name": "Root",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/api",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Health",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/api/health",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"health"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Pelicula",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/api/peliculas/:id",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"peliculas",
-						":id"
-					],
-					"variable": [
-						{
-							"key": "id",
-							"value": "1"
+			"name": "PROD",
+			"item": [
+				{
+					"name": "Root",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://zaldo.com.ar/conexa/api/",
+							"protocol": "http",
+							"host": [
+								"zaldo",
+								"com",
+								"ar"
+							],
+							"path": [
+								"conexa",
+								"api",
+								""
+							]
 						}
-					]
+					},
+					"response": []
+				},
+				{
+					"name": "Health",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://zaldo.com.ar/conexa/api/health",
+							"protocol": "http",
+							"host": [
+								"zaldo",
+								"com",
+								"ar"
+							],
+							"path": [
+								"conexa",
+								"api",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pelicula",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://zaldo.com.ar/conexa/api/peliculas/:id",
+							"protocol": "http",
+							"host": [
+								"zaldo",
+								"com",
+								"ar"
+							],
+							"path": [
+								"conexa",
+								"api",
+								"peliculas",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Peliculas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://zaldo.com.ar/conexa/api/peliculas?page=1",
+							"protocol": "http",
+							"host": [
+								"zaldo",
+								"com",
+								"ar"
+							],
+							"path": [
+								"conexa",
+								"api",
+								"peliculas"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Personajes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://zaldo.com.ar/conexa/api/personajes?page=1",
+							"protocol": "http",
+							"host": [
+								"zaldo",
+								"com",
+								"ar"
+							],
+							"path": [
+								"conexa",
+								"api",
+								"personajes"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Personaje",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://zaldo.com.ar/conexa/api/personajes/:id",
+							"protocol": "http",
+							"host": [
+								"zaldo",
+								"com",
+								"ar"
+							],
+							"path": [
+								"conexa",
+								"api",
+								"personajes",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "15"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Planetas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://zaldo.com.ar/conexa/api/planetas?page=1",
+							"protocol": "http",
+							"host": [
+								"zaldo",
+								"com",
+								"ar"
+							],
+							"path": [
+								"conexa",
+								"api",
+								"planetas"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Planeta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://zaldo.com.ar/conexa/api/planetas/:id",
+							"protocol": "http",
+							"host": [
+								"zaldo",
+								"com",
+								"ar"
+							],
+							"path": [
+								"conexa",
+								"api",
+								"planetas",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Naves",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://zaldo.com.ar/conexa/api/naves?page=1",
+							"protocol": "http",
+							"host": [
+								"zaldo",
+								"com",
+								"ar"
+							],
+							"path": [
+								"conexa",
+								"api",
+								"naves"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Nave",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://zaldo.com.ar/conexa/api/naves/:id",
+							"protocol": "http",
+							"host": [
+								"zaldo",
+								"com",
+								"ar"
+							],
+							"path": [
+								"conexa",
+								"api",
+								"naves",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Peliculas",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/api/peliculas?page=1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"peliculas"
-					],
-					"query": [
-						{
-							"key": "page",
-							"value": "1"
+			"name": "Local",
+			"item": [
+				{
+					"name": "Root",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api"
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Personajes",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/api/personajes?page=1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"personajes"
-					],
-					"query": [
-						{
-							"key": "page",
-							"value": "1"
+					},
+					"response": []
+				},
+				{
+					"name": "Health",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/health",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"health"
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Personaje",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/api/personajes/:id",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"personajes",
-						":id"
-					],
-					"variable": [
-						{
-							"key": "id",
-							"value": "15"
+					},
+					"response": []
+				},
+				{
+					"name": "Pelicula",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/peliculas/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"peliculas",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Planetas",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/api/planetas?page=1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"planetas"
-					],
-					"query": [
-						{
-							"key": "page",
-							"value": "1"
+					},
+					"response": []
+				},
+				{
+					"name": "Peliculas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/peliculas?page=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"peliculas"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Planeta",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/api/planetas/:id",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"planetas",
-						":id"
-					],
-					"variable": [
-						{
-							"key": "id",
-							"value": "3"
+					},
+					"response": []
+				},
+				{
+					"name": "Personajes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/personajes?page=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"personajes"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Naves",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/api/naves?page=1",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"naves"
-					],
-					"query": [
-						{
-							"key": "page",
-							"value": "1"
+					},
+					"response": []
+				},
+				{
+					"name": "Personaje",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/personajes/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"personajes",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "15"
+								}
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Nave",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8080/api/naves/:id",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"naves",
-						":id"
-					],
-					"variable": [
-						{
-							"key": "id",
-							"value": "9"
+					},
+					"response": []
+				},
+				{
+					"name": "Planetas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/planetas?page=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"planetas"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
 						}
-					]
+					},
+					"response": []
+				},
+				{
+					"name": "Planeta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/planetas/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"planetas",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Naves",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/naves?page=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"naves"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Nave",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/naves/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"naves",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	]
 }

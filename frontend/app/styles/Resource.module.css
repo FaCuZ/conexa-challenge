@@ -16,6 +16,7 @@
 	padding: 15px;
 	min-width: 200px;
 	border-radius: 8px;
+	max-width: 900px;
 }
 
 .card_section {
