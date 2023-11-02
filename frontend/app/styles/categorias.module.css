@@ -1,0 +1,32 @@
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.wrapper menu {
+	flex: 2;
+	display: flex;
+	justify-content: center;
+}
+
+.wrapper main {
+	flex: 8;
+	padding: 25px;
+	min-width: 500px;
+}
+
+.menu_content {
+	padding: 25px;
+}
+
+.menu_title{
+	padding-bottom: 40px;
+	font-size: 15px;
+	font-weight: 700;
+	text-shadow: 2px 2px 0px black;
+}
+
+.menu_title h1 {
+	font-size: 23px;
+}
